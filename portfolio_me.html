@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank S. Shetti | AI & Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card-bg: rgba(18, 24, 38, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --tag-bg: rgba(56, 189, 248, 0.08);
+      --tag-border: rgba(56, 189, 248, 0.25);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      background-image: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.06) 0%, transparent 50%);
+      background-repeat: no-repeat;
+      padding: 40px 20px;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header { margin-bottom: 48px; }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .status-dot {
+      width: 7px; height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+    }
+    h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; color: #fff; }
+    .tagline { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 16px; font-family: var(--font-mono); font-size: 0.88rem; }
+    .contact-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .contact-links a:hover { color: var(--accent); }
+    section { margin-bottom: 44px; }
+    .section-title {
+      font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--text-muted); font-family: var(--font-mono); margin-bottom: 18px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .section-title::after { content: ""; flex: 1; height: 1px; background: var(--card-border); }
+    .card {
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: 12px; padding: 22px; margin-bottom: 18px; backdrop-filter: blur(8px);
+    }
+    .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
+    .item-title { font-size: 1.1rem; font-weight: 600; color: #fff; }
+    .item-subtitle { font-size: 0.9rem; color: var(--accent); font-family: var(--font-mono); }
+    .item-meta { font-size: 0.84rem; color: var(--text-muted); font-family: var(--font-mono); }
+    ul.bullet-list { list-style: none; margin-top: 10px; }
+    ul.bullet-list li { position: relative; padding-left: 18px; margin-bottom: 7px; font-size: 0.93rem; color: #cbd5e1; }
+    ul.bullet-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .skill-box { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; }
+    .skill-box h4 { font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 8px; text-transform: uppercase; }
+    .skill-box p { font-size: 0.9rem; color: #cbd5e1; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag { font-family: var(--font-mono); font-size: 0.78rem; background: var(--tag-bg); border: 1px solid var(--tag-border); color: var(--accent); padding: 2px 8px; border-radius: 6px; }
+    footer { text-align: center; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--card-border); padding-top: 24px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="status-badge"><span class="status-dot"></span> Available for Opportunities</div>
+      <h1>Shashank S. Shetti</h1>
+      <p class="tagline">AI & Machine Learning Engineer | Full-Stack & Technical Operations</p>
+      <div class="contact-links">
+        <a href="mailto:shashankshettiofficial@gmail.com">✉ shashankshettiofficial@gmail.com</a>
+        <a href="tel:+917975349523">☏ +91 7975349523</a>
+        <span>📍 Bengaluru, Karnataka</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Work Experience</div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="item-title">Team Lead & Technical Coordinator</div>
+            <div class="item-subtitle">Instawork India (Client: Skild AI)</div>
+          </div>
+          <div class="item-meta">March 2025 – August 2025</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Supervised field operations and hardware setups for high-precision sensor and video data collection projects targeting robotics and vision models.</li>
+          <li>Managed physical calibration, routine deployment, and technical troubleshooting for sensory recording rigs to minimize operational downtime.</li>
+          <li>Enforced stringent data verification, multi-modal annotation quality, and telemetry checks prior to dataset ingestion.</li>
+          <li>Coordinated shift allocations, resolved on-site equipment escalations, and reported telemetry metrics directly to client engineering teams.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Hardware Telemetry</span>
+          <span class="tag">Data QA</span>
+          <span class="tag">Team Leadership</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Featured Projects</div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="item-title">Voice Biometric Authentication System</div>
+            <div class="item-subtitle">Python • Flask • Librosa • Web Audio API</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected an end-to-end voice authentication pipeline using Librosa for Mel-Frequency Cepstral Coefficients (MFCCs) and Gaussian Mixture Models (GMM).</li>
+          <li>Engineered privacy-preserving templates that store non-reversible acoustic features rather than raw audio files.</li>
+          <li>Exposed verification logic via a Flask microservice connected to browser Web Audio APIs for real-time validation.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="item-title">Real-Time Geo-Location Fraud Prevention</div>
+            <div class="item-subtitle">Python • REST APIs • Geospatial Logic</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Designed an anomaly-interception architecture comparing live user GPS coordinates against merchant POS terminals to stop card and UPI fraud.</li>
+          <li>Focused on preemptive transaction interception, halting suspicious payments before settlement.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="item-title">MemeGenius: Multi-Modal AI Generator</div>
+            <div class="item-subtitle">Python • OpenAI CLIP • GPT-2</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Built an interactive web pipeline combining OpenAI CLIP embeddings for semantic image matching with GPT-2 for contextual caption generation.</li>
+          <li>Optimized inference pipelines for rapid composition and smooth rendering on web requests.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Technical Competencies</div>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h4>Languages</h4>
+          <p>Python, C, Java, SQL, JavaScript, HTML5/CSS3</p>
+        </div>
+        <div class="skill-box">
+          <h4>Frameworks & Tools</h4>
+          <p>PyTorch, TensorFlow, Scikit-Learn, Librosa, Hugging Face, Flask, Git, Linux</p>
+        </div>
+        <div class="skill-box">
+          <h4>Data & Operations</h4>
+          <p>Pandas, NumPy, Matplotlib, Multi-Modal Annotation, Telemetry & QA Pipelines</p>
+        </div>
+        <div class="skill-box">
+          <h4>Security & Systems</h4>
+          <p>Biometric Verification, Threat Analysis, Geolocation Telemetry, RESTful APIs</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Certifications & Leadership</div>
+      <div class="card">
+        <ul class="bullet-list">
+          <li><strong>Cybersecurity Analyst Basics (Cybrary):</strong> Threat intelligence, vulnerability assessment, and network traffic monitoring.</li>
+          <li><strong>Marketing Head & Organizer — BuildForBengaluru:</strong> Spearheaded outreach and partnerships for a 24-hour collegiate hackathon.</li>
+          <li><strong>Event Coordinator — Yuvan Fest:</strong> Directed scheduling, sound engineering, and event logistics across campus.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="item-title">Bachelor of Engineering (B.E.) in AI & Machine Learning</div>
+            <div class="item-subtitle">Visvesvaraya Technological University (VTU)</div>
+          </div>
+          <div class="item-meta">2022 – 2026 | CGPA: 7.4 / 10.0</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Shashank S. Shetti • Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
